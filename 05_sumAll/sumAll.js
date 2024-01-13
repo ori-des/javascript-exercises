@@ -1,4 +1,8 @@
 const sumAll = function(numOne, numTwo) {
+    if (typeof numOne !== 'number' || typeof numTwo !== 'number' || numOne < 0 || numTwo < 0) {
+        return "ERROR"
+    };
+    
     let arr = [];
     if (numOne > numTwo) {
        arr = [numTwo, numOne];

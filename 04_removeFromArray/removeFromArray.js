@@ -3,7 +3,7 @@ const removeFromArray = function (arr, ...args) {
     for (let i = 0; i < arr.length; i++) {
         if (args.indexOf(arr[i]) === -1) {
             newArr.push(arr[i]);
-        };
+        }
     } return newArr;
 };
 

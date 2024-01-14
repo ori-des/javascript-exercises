@@ -1,7 +1,7 @@
 const removeFromArray = function (arr, ...args) {
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
-        if (arr.indexOf(arr[i]) !== arr.indexOf(args[0]) && arr.indexOf(arr[i]) !== arr.indexOf(args[1]) && arr.indexOf(arr[i]) !== arr.indexOf(args[2]) && arr.indexOf(arr[i]) !== arr.indexOf(args[3])) {
+        if (arr.indexOf(args[0]) === -1 && arr.indexOf(args[1]) === -1 && arr.indexOf(args[2]) === -1 && arr.indexOf(args[3]) === -1) {
             newArr.push(arr[i]);
         };
     } return newArr;

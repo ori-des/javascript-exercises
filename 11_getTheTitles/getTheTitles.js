@@ -1,15 +1,10 @@
 const getTheTitles = function(array) {
-    let firstObj = array[0];
-    let secondObj = array[1];
-    let firstValue = [];
-    let secondValue = [];
-    for (let value in firstObj) {
-        firstValue.push(firstObj[value]);
-    } 
-    for (let value in secondObj) {
-        secondValue.push(secondObj[value]);
-    } 
-    return [firstValue[0], secondValue[0]];
+    let books = [];
+    for (let i = 0; i < array.length; i++) {
+        for (let value in array[i]) {
+            books.push(array[i][value]);
+        }
+    } return [books[0], books[2]];
 };
 
 // Do not edit below this line

@@ -4,6 +4,9 @@ const findTheOldest = function (array) {
     for (let i = 0; i < array.length; i++) {
         let yearOfBirth = array[i]['yearOfBirth'];
         let yearOfDeath = array[i]['yearOfDeath'];
+        if (!yearOfDeath) {
+            yearOfDeath = new Date().getFullYear();
+        }
         let age = yearOfDeath - yearOfBirth;
         if (age > prevAge) {
             prevAge = age;
